@@ -1,0 +1,5 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Pricing\Render\Amount">
+        <plugin name="price_plugin" type="Hiberus\PruebaPrecio\Plugin\Pricing\Render\PricePlugin" sortOrder="10" disabled="false" />
+    </type>
+</config>
