@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="hiberus_exam" resource="default" engine="innodb" comment="Tabla Prueba Hiberus">
+        <column xsi:type="int" name="id_exam" padding="11" unsigned="true" nullable="false" identity="true" />
+        <column xsi:type="varchar" name="firstname" length="100" unsigned="true" nullable="false" />
+        <column xsi:type="varchar" name="lastname" length="250" unsigned="true" nullable="false" />
+        <column xsi:type="decimal" name="mark" scale="2" precision="4" unsigned="true" nullable="false" />
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id_exam" />
+        </constraint>
+    </table>
+</schema>
