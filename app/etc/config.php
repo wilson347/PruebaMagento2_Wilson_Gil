@@ -290,6 +290,7 @@ return [
         'Dotdigitalgroup_Email' => 1,
         'Dotdigitalgroup_Chat' => 1,
         'Hiberus_Curso' => 1,
+        'Hiberus_Gil' => 1,
         'Hiberus_PruebaPrecio' => 1,
         'Klarna_Core' => 1,
         'Klarna_Ordermanagement' => 1,
