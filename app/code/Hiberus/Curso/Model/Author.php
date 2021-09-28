@@ -5,7 +5,7 @@ namespace Hiberus\Curso\Model;
 class Author
 {
     public function getAuthorName(){
-        return 'Wilson Gil';
+        return 'Wilson Exam';
     }
 
 }

@@ -2,12 +2,10 @@
 
 namespace Hiberus\Gil\Api\Data;
 
-use Magento\Tests\NamingConvention\true\float;
-
-interface GilInterface extends \Magento\Framework\Api\ExtensibleDataInterface
+interface ExamInterface extends \Magento\Framework\Api\ExtensibleDataInterface
 {
 
-    public const TABLE_NAME = 'Hiberus_Gil';
+    public const TABLE_NAME = 'hiberus_exam';
     public const COLUMN_ID = 'id_exam';
 
     /**

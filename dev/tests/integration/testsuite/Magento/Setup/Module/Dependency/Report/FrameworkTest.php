@@ -46,7 +46,7 @@ class FrameworkTest extends \PHPUnit\Framework\TestCase
                     'files_for_parse' => [
                         $this->fixtureDirModule . 'Helper/Helper.php',
                         $this->fixtureDirModule . 'Model/Model.php',
-                        $this->fixtureDirModule . 'view/frontend/template.phtml',
+                        $this->fixtureDirModule . 'view/frontend/index.phtml',
                     ],
                     'config_files' => [$this->fixtureDirModule . 'etc/module.xml'],
                     'declared_namespaces' => ['Magento'],

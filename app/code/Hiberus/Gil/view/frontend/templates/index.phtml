@@ -1,0 +1,46 @@
+<?php
+/*
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$resource = $objectManager->get('Magento\Framework\App\ResourceConnection');
+$connection = $resource->getConnection();
+$tableName = $resource->getTableName('hiberus_exam'); //gives table name
+
+//Select Data from table
+$sql = $connection->select()->from(
+    ["hiberus_exam" => $tableName]
+);
+$result = $connection->fetchAll($sql);
+
+print_r($result); */
+
+/**
+ * @var \Hiberus\Gil\Block\Index $block
+ */
+$alumnos = $block->getAlumno();
+$notas = $block->getMarks()
+?>
+
+<h2 class="title">Alumnos</h2>
+
+<?php
+foreach($alumnos as $alumno) {
+
+    if($alumno->getMark() > 4.9){
+
+        $classEvaluation = "approved";
+    }else{
+        $classEvaluation = "suspensed";
+    }
+
+    ?>
+
+    <ul>
+        <li>Nombre:<?= $alumno->getFirstName(); ?></li>
+        <li>Apellido: <?= $alumno->getLastName(); ?></li>
+        <li class="<?=$classEvaluation?>">Nota:<?= $alumno->getMark(); ?></li>
+    </ul>
+
+<?php } ?>
+<p> Media de notas: <?=$notas?> </p>
+
+<p> Total de alumnos: <?= (count($alumnos)) ?> </p>

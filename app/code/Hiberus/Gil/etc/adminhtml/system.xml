@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="hiberus" sortOrder="999" translate="label">
+            <label>Hiberus</label>
+        </tab>
+        <section id="hiberus_elementos" showInDefault="1" sortOrder="10">
+            <label>Notas Elementos</label>
+            <tab>hiberus</tab>
+            <resource>Hiberus_Gil::config</resource>
+            <group id="general" showInDefault="1" sortOrder="10">
+                <label>General</label>
+
+                <field id="elementos" type="text" sortOrder="10" showInDefault="1">
+                    <label>Elementos</label>
+                    <validate>validate-number</validate>
+                </field>
+
+                <field id="aprobados" type="text" sortOrder="10" showInDefault="1">
+                    <label>Aprobados</label>
+                    <validate>validate-number</validate>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -45,7 +45,7 @@ class TemplatesTest extends \PHPUnit\Framework\TestCase
     /**
      * Test that references to template files follows canonical format.
      *
-     * path/to/template.phtml Format is prohibited.
+     * path/to/index.phtml Format is prohibited.
      * @return void
      */
     public function testTemplateFollowsCanonicalName()
@@ -68,7 +68,7 @@ class TemplatesTest extends \PHPUnit\Framework\TestCase
         }
         if (count($errors) > 0) {
             $message = 'Failed to assert that the template reference follows the canonical format '
-                     . 'Vendor' . '_' . 'Module::path/to/template.phtml. Following files haven\'t pass verification:'
+                     . 'Vendor' . '_' . 'Module::path/to/index.phtml. Following files haven\'t pass verification:'
                      . PHP_EOL;
             foreach ($errors as $file => $wrongTemplates) {
                 $message .= $file . ':' . PHP_EOL;

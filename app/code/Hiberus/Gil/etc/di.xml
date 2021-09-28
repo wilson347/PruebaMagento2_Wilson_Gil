@@ -1,0 +1,16 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+
+    <preference for="Hiberus\Gil\Api\Data\ExamInterface" type="Hiberus\Gil\Model\Exam"/>
+    <preference for="Hiberus\Gil\Api\ExamRepositoryInterface" type="Hiberus\Gil\Model\ExamRepository"/>
+
+    <type name="Magento\Framework\EntityManager\MetadataPool">
+        <arguments>
+            <argument name="metadata" xsi:type="array">
+                <item name="Hiberus\Gil\Api\Data\ExamInterface" xsi:type="array">
+                    <item name="entityTableName" xsi:type="const">Hiberus\Gil\Api\Data\ExamInterface::TABLE_NAME</item>
+                    <item name="identifierField" xsi:type="const">Hiberus\Gil\Api\Data\ExamInterface::COLUMN_ID</item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+</config>
